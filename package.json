@@ -1,0 +1,29 @@
+{
+  "name": "nunjucks-s3-loader",
+  "version": "1.0.0",
+  "description": "Load Nunjucks templates asynchronously from Amazon S3",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mjm/nunjucks-s3-loader.git"
+  },
+  "author": "Matt Moriarity",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mjm/nunjucks-s3-loader/issues"
+  },
+  "homepage": "https://github.com/mjm/nunjucks-s3-loader#readme",
+  "dependencies": {
+    "aws-sdk": "^2.373.0",
+    "nunjucks": "^3.1.4"
+  },
+  "devDependencies": {
+    "@types/nunjucks": "^3.1.0",
+    "typescript": "^3.2.2"
+  }
+}
