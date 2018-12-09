@@ -8,13 +8,13 @@ This loader is intended for server-side rendering, where nunjucks can cache the 
 
 ## Install
 
-```
+```sh
 npm i nunjucks-s3-loader
 ```
 
 ## Example
 
-```
+```typescript
 import * as nunjucks from "nunjucks";
 import S3Loader from "nunjucks-s3-loader";
 
@@ -31,7 +31,7 @@ env.render('post.html', { title: 'My Blog Post' }, (err, res) => {
 
 If you need to, you can pass in a custom S3 client:
 
-```
+```typescript
 const s3 = new S3({ ... });
 const loader = new S3Loader({
   bucket: 'your-bucket-name',

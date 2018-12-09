@@ -60,6 +60,8 @@ export default class S3Loader implements nunjucks.ILoader {
       if (cb) {
         if (err) {
           cb(err);
+        } else if (!result.Body) {
+          cb(new Error('no template body found in S3'));
         } else {
           const src = result.Body.toString();
           const res = {
