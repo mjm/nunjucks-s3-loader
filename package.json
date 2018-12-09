@@ -1,6 +1,6 @@
 {
   "name": "nunjucks-s3-loader",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Load Nunjucks templates asynchronously from Amazon S3",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
